@@ -1,5 +1,22 @@
 # This is the Entity Relationship Diagram (ERD) text for the Crowdfunding Data
 
+Contacts
+-
+contact_id INT PK
+first_name VARCHAR
+last_name VARCHAR
+email VARCHAR
+
+Category
+-
+category_id VARCHAR PK
+category VARCHAR
+
+Subcategory
+-
+subcategory_id VARCHAR PK
+subcategory VARCHAR
+
 Campaign
 -
 cf_id INT PK
@@ -18,20 +35,3 @@ staff_pick VARCHAR
 spotlight VARCHAR
 category_id VARCHAR FK >- Category.category_id
 subcategory_id VARCHAR FK >- Subcategory.subcategory_id
-
-Contacts
--
-contact_id INT PK
-first_name VARCHAR
-last_name VARCHAR
-email VARCHAR
-
-Category
--
-category_id VARCHAR PK
-category VARCHAR
-
-Subcategory
--
-subcategory_id VARCHAR PK
-subcategory VARCHAR
